@@ -1,7 +1,7 @@
 import unittest
 
-from players import Player
+from draw_object import Ball
 
-def player_score_test():
-    player = Player()
-    assert player.score == 0
+def test_ball():
+    ball = Ball(position=(0, 0), dims=(1, 1), shape="circle")
+    assert ball.turtle_object.dx == 0.35
