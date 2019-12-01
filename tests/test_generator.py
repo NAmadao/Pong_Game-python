@@ -1,7 +1,8 @@
 import unittest
 
-from draw_object import Ball
+from fml import game_add
 
-def test_ball():
-    ball = Ball(position=(0, 0), dims=(1, 1), shape="circle")
-    assert ball.turtle_object.dx == 0.35
+def test_game():
+    asset = 2
+    version = 5
+    assert game_add(asset, version) == 7
