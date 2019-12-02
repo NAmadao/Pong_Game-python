@@ -1,8 +1,7 @@
 import unittest
 
-from fml import game_add
-
+from game import pong
 def test_game():
     asset = 2
     version = 5
-    assert game_add(asset, version) == 7
+    assert pong.game_add(asset, version) == 7
